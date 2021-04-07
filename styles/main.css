@@ -25,6 +25,10 @@ main {
     background-color: rgba(var(--light-color), 0.5);
 }
 
+img{
+    border: 3px solid #000000;
+}
+
 h1, h2, h3 {
     line-height: 1.2;
     font-family: 'Playfair Display', serif;
