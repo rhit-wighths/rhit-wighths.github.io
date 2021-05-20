@@ -2,13 +2,34 @@
 @import url('https://fonts.googleapis.com/css2?family=Lora&family=Playfair+Display:wght@500&display=swap');
 
 :root {
-    --vertical-space: 2rem;
+    --vertical-space: 10px;
     --horizontal-space: 3rem;
     /*30C8D9 light:  44F2E1*/
     --light-color: 68, 242, 225;
-    --body-color: #0D0D0D;
-    --heading-color: #0D0D0D;
+    --body-color: #000000;
+    --heading-color: #000000;
     --contrast-color: #D89AD9;
+}
+
+.navbar{
+    background-color: #000000;
+    color: white;
+    width: 100vw;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-flow: column;
+    align-items: center;
+    padding-bottom: 15px;
+}
+h1{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+header{
+    background-color: #000000;
+    color: white;
 }
 
 body {
@@ -23,6 +44,10 @@ body {
 
 main {
     background-color: rgba(var(--light-color), 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
 }
 
 img{
@@ -33,6 +58,12 @@ h1, h2, h3 {
     line-height: 1.2;
     font-family: 'Playfair Display', serif;
     color: var(--heading-color);
+}
+
+#nameHeader, .navbar-brand{
+    color: white;
+    padding-right: 5px;
+    padding-left: 5px;
 }
 
 a {
@@ -46,7 +77,8 @@ a:hover {
 }
 
 body#about img{
-    height: 15em;
+    height: 18em;
+    max-width: 100vw;
 }
 
 
@@ -55,19 +87,15 @@ p {
 }
 
 body {
-    display: grid;
-    grid-template-areas: "head head" "nav nav" "main main" "foot foot";
-    grid-template-columns: 1fr 4fr;
-    grid-template-rows: auto auto 1fr auto;
+    display: flex;
+    flex-wrap: wrap;
 }
 
-@media screen and (min-width: 24em){
-    body{
-        grid-template-areas: "head head" "nav main" "foot foot";
-        grid-template-rows: auto 1fr auto;
-
+@media only screen and (min-width: 600px) {
+    body {
+      background-color: lightblue;
     }
-}
+  }
 
 body > * {
     padding-left: var(--horizontal-space);
@@ -75,26 +103,26 @@ body > * {
 }
 
 body > header {
-    grid-area: head;
+    /* grid-area: head; */
 }
 
 body > nav {
-    grid-area: nav;
+    /* grid-area: nav; */
 
 }
 
 body > nav ul {
-    list-style-type: none;
-    padding: 0;
+    /* list-style-type: none;
+    padding: 0; */
 }
 
 body > main{
-    grid-area: main;
+    /* grid-area: main; */
 
 }
 
 body > footer{
-    grid-area: foot;
+    /* grid-area: foot; */
 
 }
 
@@ -115,14 +143,22 @@ body#portfolio ul#portfolioItems {
     padding: 0;
 }
 
+#portfolioItems{
+    padding-top: 80px;
+}
 
-@media screen and (min-width: 25em){
+
+/* @media screen and (min-width: 25em){
     body#portfolio ul#portfolioItems {
         flex-basis: 48%;
         padding-right: 2%;
     }
-}
+} */
 
 body#portfolio ul#portfolioItems li img {
     max-width: 100%;
+}
+
+main{
+    padding-top: 120px;
 }

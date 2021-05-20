@@ -5,22 +5,71 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Harrison Wight's Personal Website</title>
     <link rel="stylesheet" href="styles/normalize.css" />
-    <link rel="stylesheet" href="styles/bootstrap-material-design.min.css" />
     <link rel="stylesheet" href="styles/main.css" />
-    <link rel="icon" href="images/favicon.png" />
+    <link rel="icon" href="favicon.ico" />
   </head>
+  
   <body id="about">
     <!-- Your content goes here -->
-    <nav class="navbar navbar-dark fixed-top">
-      <h1 id="nameHeader">Harrison Wight</h1>
-      <div>
-        <a class="navbar-brand" href="index.html">About</a>
-        <a class="navbar-brand" href="portfolio.html">Portfolio</a>
-        <a class="navbar-brand" href="resume.html">Resume</a>
-      </div>
+    <header>
+      <h1>Harrison Wight</h1>
+    </header>
+    <nav>
+        <ul class="nav nav-pills">
+            <li><a class="nav-link" href="#about">About</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#resume">Resume</a></li>
+        </ul>
     </nav>
     <main>
-        <h1>Harrison Wight</h1>
+        <h1 id="about">About</h1>
+        <img src="images/avatar.jpg">
+        <p>Hello, I am Harrison Wight. I am currently a freshman Computer Science at Rose-Hulman Institute of Technology
+          I am also involved in Army ROTC, football, Phi Gamma Delta Fraternity, and intramural sports.
+        </p>
+    
+        
+
+        
+        <h1 id="portfolio">Portfolio</h1>
+
+      <ul id="portfolioItems">
+        <li>
+          <h2><a href="#">Portfolio Website</a></h2>
+          <img src="images/portfolioSite.png" />
+          <p>In this portfolio project for CSSE 280, I created my own Portfolio Website to showcase
+            my talents as a Computer Science major.
+          </p>
+        </li>
+        <li>
+          <h2><a href="#">Genetic Algorithm</a></h2>
+          <img src="images/genetic.png" />
+          <p>My partner and I programmed a Genetic Algorithm in Java to simulate a population over
+            a certain period of time. In this simulation, the user can save and load individual chromosomes
+            or display the evolution of a population. 
+          </p>
+          <ul>
+            <li>Terminate at max fitness</li>
+            <li>Elitism rate</li>
+            <li>Mutation rate</li>
+            <li>Number of generations</li>
+            <li>Population size</li>
+            <li>Chromosome length</li>
+            <li>Fitness function</li>
+            <li>Crossover</li>
+          </ul>
+          <p>
+            On one graph, the user can see the high, average, low, and hamming distance from each population.
+            The user could also see the fitness levels of each individual.
+          </p>
+        </li>
+      </ul>
+
+
+
+
+
+      <h1 id="resume">Harrison Wight</h1>
         <h2>Objective</h2>   
 		    <p>Seeking a summer internship to further my expertise in the computer science field</p>
 
@@ -87,9 +136,11 @@
           <li>Intramural Volleyball & Ultimate Frisbee					2020-2021</li>	  
           <li>Fellowship of Christian Athletes (FCA)						2020-2021</li>
         </ul>
+
+
     </main>
     <footer>
-        
+        You can email me at wighths@rose-hulman.edu
     </footer>
     <script src="scripts/main.js"></script>
   </body>

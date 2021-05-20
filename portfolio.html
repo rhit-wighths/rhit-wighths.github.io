@@ -5,20 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Harrison Wight's Portfolio</title>
     <link rel="stylesheet" href="styles/normalize.css" />
+    <link rel="stylesheet" href="styles/bootstrap-material-design.min.css" />
     <link rel="stylesheet" href="styles/main.css" />
     <link rel="icon" href="images/favicon.png" />
   </head>
   <body id="portfolio">
     <!-- Your content goes here -->
-    <header>
-      <h1>Harrison Wight</h1>
-    </header>
-    <nav>
-        <ul>
-            <li><a href="index.html">About</a></li>
-            <li><a href="portfolio.html">Portfolio</a></li>
-            <li><a href="resume.html">Resume</a></li>
-        </ul>
+    <nav class="navbar navbar-dark fixed-top">
+      <h1 id="nameHeader">Harrison Wight</h1>
+      <div>
+        <a class="navbar-brand" href="index.html">About</a>
+        <a class="navbar-brand" href="portfolio.html">Portfolio</a>
+        <a class="navbar-brand" href="resume.html">Resume</a>
+      </div>
     </nav>
     <main>
       <h1>Portfolio</h1>
@@ -54,6 +53,14 @@
           </p>
         </li>
         <li>
+          <div class="card" style="width: 18rem;">
+            <img class="card-img-top" src="..." alt="Card image cap">
+            <div class="card-body">
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            </div>
+          </div>
+        </li>
+        <li>
           <h2><a href="#">Project Name</a></h2>
           <img src="images/portfolio/project.jpg" />
           <p>Shoter sentence for things</p>
@@ -63,6 +70,7 @@
     <footer>
         You can email me at wighths@rose-hulman.edu
     </footer>
+    <script src="scripts/bootstrap-material-design.js"></script>
     <script src="scripts/main.js"></script>
   </body>
 </html>
