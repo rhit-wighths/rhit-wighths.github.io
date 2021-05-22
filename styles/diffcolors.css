@@ -6,14 +6,14 @@
     --horizontal-space: 3rem;
     /*30C8D9 light:  44F2E1*/
     --light-color: 68, 242, 225;
-    --body-color: #000000;
-    --heading-color: #000000;
-    --contrast-color: #D89AD9;
+    --body-color: white;
+    --heading-color: white;
+    --contrast-color: #7e217e;
 }
 
 .navbar{
-    background-color: #000000;
-    color: white;
+    background-color: white;
+    color: black;
     width: 100vw;
     display: flex;
     flex-wrap: wrap;
@@ -23,13 +23,13 @@
     padding-bottom: 15px;
 }
 h1{
-    margin-top: 2px;
-    margin-bottom: 2px;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 header{
-    background-color: #000000;
-    color: white;
+    background-color: white;
+    color: black;
 }
 
 body {
@@ -51,7 +51,7 @@ main {
 }
 
 img{
-    border: 3px solid #000000;
+    border: 3px solid white;
 }
 
 .card img{
@@ -65,7 +65,7 @@ h1, h2, h3 {
 }
 
 #nameHeader, .navbar-brand{
-    color: white;
+    color: black;
     padding-right: 5px;
     padding-left: 5px;
 }
@@ -109,7 +109,7 @@ a{
 
 @media only screen and (min-width: 600px) {
     body {
-      background-color: lightblue;
+      background-color: darkblue;
     }
     h1{
         font-size: 30pt;
@@ -205,13 +205,13 @@ main{
     padding: 0px;
     padding-bottom: 5px;
     width: 300px;
-    background: linear-gradient(45deg, #FFF, #EEE);
+    background: linear-gradient(45deg, #000, #111);
     transition: all .2s ease;
 }
 
 .card img {
     width: 100%;
-    border-bottom: 1px solid #ccc;
+    border-bottom: 1px solid #333;
     
     margin-bottom: 3px;
 }
@@ -219,7 +219,7 @@ main{
 .card p {
     font: 1.25em Arial, sans-serif;
     text-align: center;
-    color: #333;
+    color: #ccc;
     margin-top: 0px;
     margin-left: 12px;
     font-weight: bold;
