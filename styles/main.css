@@ -8,7 +8,8 @@
     --light-color: 68, 242, 225;
     --body-color: #000000;
     --heading-color: #000000;
-    --contrast-color: #D89AD9;
+    /* --contrast-color: #D89AD9; */
+    --contrast-color: #276526;
 }
 
 .navbar{

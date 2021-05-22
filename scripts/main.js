@@ -2,18 +2,18 @@
 // });
 
 function main(){
-    if(document.querySelector("#portfolio")){
-        for(let i = 1; i < 4; i++){
-            document.querySelector(`#cardMenu${i}`).onclick = (event) => {
-                console.log(`${i} clicked`);
-            }
-        }
-        document.querySelector("#darkMode").onclick = (event) => {
-            document.querySelectorAll(".dark-mode").classList.toggle("dark-mode")
+    // if(document.querySelector("#portfolio")){
+    //     for(let i = 1; i < 4; i++){
+    //         document.querySelector(`#cardMenu${i}`).onclick = (event) => {
+    //             console.log(`${i} clicked`);
+    //         }
+    //     }
+    //     document.querySelector("#darkMode").onclick = (event) => {
+    //         document.querySelectorAll(".dark-mode").classList.toggle("dark-mode")
             
-        }
+    //     }
 
-    }
+    // }
     const btn = document.querySelector("#darkMode");
     // Select the stylesheet <link>
     const theme = document.querySelector("#theme-link");
@@ -22,7 +22,7 @@ function main(){
     btn.addEventListener("click", function() {
         console.log("works");
         // If the current URL contains "ligh-theme.css"
-        if (theme.getAttribute("href") == "main.css") {
+        if (theme.getAttribute("href") == "styles/main.css") {
             // ... then switch it to "dark-theme.css"
             theme.href = "styles/diffcolors.css";
             console.log("should change");
